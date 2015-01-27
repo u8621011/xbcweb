@@ -1,0 +1,41 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+
+<h3><p>可外送區域:  目前只有「新北市板橋區」提供外送服務。</p></h3>
+<h3><p>外送金額限制: (以下金額皆不包含電話卡)</p><h3>
+<ul>
+    <li>滿 NTD 500 以上可外送，但需要外加 NTD 100 服務費</li>
+    <li>滿 NTD 1500, 外送免服務費</li>
+</ul>
+
+<h3><p>外送方式:</p></h3>
+<ol>
+    <li>先到我們各產品類別逛逛
+        {% if product_categories %}
+            <ul>
+                {% for category in product_categories %}
+                    {% if category.show_it %}
+                        <li><a target="_blank" href="{% url 'products' %}?c={{category.code}}">{{category.name}}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </li>
+    <li>記錄下來你需要的東西的
+        <ul>
+            <li>編號</li>
+            <li>品名</li>
+            <li>數量</li>
+        </ul>
+    </li>
+    <li>與我們連絡
+    <ul>
+        <li>Tel: 02-2966-5915<span> 或者</span></li>
+        <li>Email:<a href="mailto:xbc.sales@gmail.com"> xbc.sales@gmail.com<a></li>
+    </ul></li>
+</ol>
+
+{% endblock %}

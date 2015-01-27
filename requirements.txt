@@ -1,0 +1,10 @@
+Django==1.7.2
+Pillow==2.7.0
+diff-match-patch==20121119
+dj-database-url==0.3.0
+dj-static==0.0.6
+-e git://github.com/u8621011/django-import-export.git#egg=django-import-export
+gunicorn==19.1.1
+psycopg2==2.5.4
+static3==0.5.1
+tablib==0.10.0

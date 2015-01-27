@@ -1,0 +1,121 @@
+﻿{% extends "app/layout.html" %}
+
+{% block scripts %}
+    <script src="static/app/scripts/xbc.js"></script>
+{% endblock %}
+
+{% block content %}
+    <link href="static/app/content/3-col-portfolio.css" rel="stylesheet">
+
+    <!-- Page Header -->
+    <div class="row">
+        <div class="col-xs-8 col-sm-6 col-md-5 col-lg-4">
+            <h2 class="product-header">{{category}}</h2>
+        </div>
+        {% comment %}
+            <div class="col-xs-8 col-sm-6 col-md-5 col-lg-4">{{category}}</div>
+        {% endcomment %}
+
+        {% comment %}
+        <div>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" onclick='on_product_search_click ({{c}});'>Go!</button>
+                </span>
+                <input type="text"
+                    class="form-control"
+                    placeholder="Search for..."
+                    id="product_search_box"
+                    onkeypress="on_product_search_pressed (event, {{c}});">
+            </div>
+        </div>
+        {% endcomment %}
+
+        <div class="form-group form-inline">
+            <div class="input-group">
+                <!--<label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>-->
+                {% if s %}
+                    <div id="search_icon" class="input-group-addon glyphicon glyphicon-remove" onclick='on_cancel_search_click({{c}});'></div>
+                {% else %}
+                    <div id="search_icon" class="input-group-addon glyphicon glyphicon-search" onclick='on_product_search_click ({{c}});'></div>
+                {% endif %}
+                {% if s %}
+                    <input type="text" placeholder="Search" class="form-control" id="product_search_box" onkeypress="on_product_search_pressed (event, {{c}});" value={{s}}>
+                {% else %}
+                    <input type="text" placeholder="Search" class="form-control" id="product_search_box" onkeypress="on_product_search_pressed (event, {{c}});">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+
+    <!-- Products Row -->
+        {% comment %}
+        iphone 3g: 480/320=1.5, 320/480=0.667 (use 160x160 image?
+        iphone 5: 1136/640=1.775, 640/1136=0.56  (use 240x240 image?)
+        iphone 6: 1080x1920, (use 360x360 image?)
+        galaxy s3 mini: 800x480
+
+        bootstrap device defintions
+        Extra small devices: <768px
+        Small devices Tablets : ≥768px
+        Medium devices desktop: ≥992px
+        Large devices Desktops: ≥1200px
+        {% endcomment %}
+        <div class="row">
+            {% for product in products %}
+                <div class="col-lg-3 col-md-4 col-xs-6 portfolio-item" onmouseover="get_item_count_in_one_page();">
+                    <!--<a href="#">
+                    </a>-->
+                    <img class="img-responsive no_img_alterable" src="static/app/img/products/{{product.code}}.gif" alt="">
+                    <!--
+                    <h3 class="portfolio-title-box">
+                        <a href="#" class="portfolio-title-text">{{ product.name }}</a>
+                    </h3>
+                    -->
+                    <p style='height: 2em'>{{ product.name_indo }}</p>
+                    <p>
+                        編號: {{product.code}}<br/>
+                        規格: {{product.spec}}<br/>
+                        單位: {{product.uom.name}}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    
+        <!-- /.row -->
+
+    <hr>
+
+    <!-- Pagination -->
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <ul class="pager">
+                {% if p|add:"-1" %}
+                    <!-- not first page -->
+                    <li class="previous col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'-1'}}&s={{s}}"><span aria-hidden="true">&larr;</span> Older</a></li>
+                {% else %}
+                    <!-- first page -->
+                    <li class="previous disabled col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'-1'}}&s={{s}}"><span aria-hidden="true">&larr;</span> Older</a></li>
+                {% endif %}
+
+                {% comment %}
+                <li class="col-xs-2">Jump to <input type="text" id="page_number" placeholder="{{p}}"
+                 onkeypress="on_page_num_pressed (event, {{c}}, {{s}}, {{ipp}}, {{t}}, {{pt}});">/{{pt}}</li>
+                {% endcomment %}
+                <li class="col-xs-2">Page {{p}}/{{pt}}</li>
+
+                {% if p == pt %}
+                    <li class="next disabled col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'1'}}&s={{s}}">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                {% else %}
+                    <li class="next col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'1'}}&s={{s}}">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+{% endblock %}

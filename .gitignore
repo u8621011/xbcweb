@@ -1,0 +1,19 @@
+# system variables
+/env.bat
+/exclude.git_backup
+
+# virutal env folders
+/env
+
+# auto generated files
+/static
+/db.sqlite3
+
+# log files
+**/*.log
+
+#  compiled file
+/bin
+/obj
+**/__pycache__
+**/__pycache__/*

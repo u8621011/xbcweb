@@ -1,0 +1,32 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron_bg"></div>
+<div class="jumbotron">
+    <h1><span>外送服務特報</span></h1>
+    <p class="lead"><span>你懷念的家鄉味、你需要的服務都可以送到你家喔~ 詳情請按下面的「我要外送」<span></p>
+    <p><a href="/delivery_intro" class="btn btn-primary btn-large">我要外送 &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>記憶中的香味</h2>
+        <p>
+            不管是，香蘭葉的芋頭味、椰漿濃濃的奶香、炒起來特別夠味的天貝或者一大早的印尼肉粽的簡單滿足，我們這裏都有喔。
+        </p>
+        <p><a class="btn btn-default" href="/products?c=13">生鮮冷凍品 &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>還是ABC最道地</h2>
+        <p>在台灣吃來吃去怎麼都不夠辣、不夠香，還是 ABC 辣椒醬最道地、燙青菜還是Gado-Gado最合宜。</p>
+        <p><a class="btn btn-default" href="/products?c=03">醬料、調味料 &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>想來我們店裏逛逛</h2>
+        <p>外送很方便，不過我更喜歡去店內逛逛，可以看看有什麼新東西，搞不好可以遇到同鄉大家順便打打屁!! </p>
+        <p><a class="btn btn-default" href="/about">我們在這裏 &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
