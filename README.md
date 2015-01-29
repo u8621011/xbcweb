@@ -1,4 +1,4 @@
-# To Do
+﻿# To Do
 0. Web site scope
 	- add facebook link
 	- use https over site admin connection	

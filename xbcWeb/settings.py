@@ -1,3 +1,5 @@
+﻿# coding: utf-8
+
 """
 Django settings for xbcWeb project.
 """
@@ -43,6 +45,12 @@ TIME_ZONE = 'Asia/Taipei'
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
+
+# available languages of this site
+LANGUAGES = (
+    ('zh-TW', '繁體中文'),
+    ('id', 'Bahasa Indonesia'),
+    )
 
 SITE_ID = 1
 

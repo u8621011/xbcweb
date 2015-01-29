@@ -1,1 +1,1 @@
-web: gunicorn xbcWeb.wsgi --log-file -
+﻿web: gunicorn xbcWeb.wsgi --log-file -

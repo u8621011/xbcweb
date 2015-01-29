@@ -1,3 +1,4 @@
+﻿#   coding: utf-8
 """
 Definition of views.
 """
@@ -8,6 +9,7 @@ from django.template import RequestContext
 from datetime import datetime
 from app.models import ProductCategory
 from django.contrib.sitemaps import Sitemap
+from django.utils.translation import ugettext as _
 
 import logging
 logger = logging.getLogger (__name__)
@@ -16,6 +18,9 @@ def prepare_general_cxt ():
     context = {}
 
     context['year'] = datetime.now().year
+
+    # Translators: The brand name of the site
+    context['mybrand'] = _('Xiao Bin Cheng Store')
 
     all_product_category = ProductCategory.objects.all ()
     context['product_categories'] = all_product_category
@@ -72,7 +77,7 @@ def about(request):
 
     context = prepare_general_cxt ()
     context['title'] = 'About'
-    context['message'] = 'Toko Indonesia Xiao Bin Cheng'
+    context['message'] = _('Xiao Bin Cheng Store')
     
 
     return render(
