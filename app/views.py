@@ -32,7 +32,7 @@ def home(request):
     assert isinstance(request, HttpRequest)
 
     context = prepare_general_cxt ()
-    context['title'] = 'Home'
+    context['title'] = _('Home')
 
     return render(
         request,
@@ -76,7 +76,7 @@ def about(request):
     assert isinstance(request, HttpRequest)
 
     context = prepare_general_cxt ()
-    context['title'] = 'About'
+    context['title'] = _('About')
     context['message'] = _('Xiao Bin Cheng Store')
     
 
@@ -96,7 +96,7 @@ def products(request):
     assert isinstance(request, HttpRequest)
 
     context = prepare_general_cxt ()
-    context['title'] = 'Product'
+    context['title'] = _('Product')
 
     if request.method == 'GET':
         category = request.GET.get ('c')
