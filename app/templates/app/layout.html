@@ -23,7 +23,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="{% url 'home' %}">Home</a></li>
+                    {% comment "hide for first web version" %}
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                    {% endcomment %}
                     {% comment "old product menu" %}
                     <li><a href="{% url 'products' %}">Products</a></li>
                     {% endcomment %}
@@ -42,7 +44,9 @@
                             </ul>
                         </li>
                     {% endif %}
+                    {% comment "hide for first version" %}
                     <li><a href="{% url 'delivery_intro' %}">Delivery</a></li>
+                    {% endcomment %}
                     <li><a href="{% url 'about' %}">About</a></li>
                 </ul>
                 {% comment 'login ui' %}

@@ -100,8 +100,11 @@ def products(request):
 
     if request.method == 'GET':
         category = request.GET.get ('c')
-        if int (category):
+        if category and int (category):
             category = "{0:02d}".format (int(category))
+        else:
+            # default display 01 category
+            category = "01"
 
         context['category'] = ProductCategory.objects.get (code = category)
 

@@ -18,8 +18,9 @@ from django.contrib.sitemaps.views import sitemap
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'app.views.home', name='index'),
-    url(r'^home$', 'app.views.home', name='home'),
+    #url(r'^$', 'app.views.home', name='index'),
+    #url(r'^home$', 'app.views.home', name='home'),
+    url(r'^$', 'app.views.products', name='index'),
     #url(r'^contact$', 'app.views.contact', name='contact'),
     url(r'^about', 'app.views.about', name='about'),
     url(r'^login/$',
