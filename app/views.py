@@ -75,6 +75,12 @@ def about(request):
     """Renders the about page."""
     assert isinstance(request, HttpRequest)
 
+    #from django.utils import translation
+    #user_language = 'zh_TW'
+    #request.session[translation.LANGUAGE_SESSION_KEY] = user_language
+    #request.session['django_language'] = user_language
+    #translation.activate(user_language)
+
     context = prepare_general_cxt ()
     context['title'] = _('About')
     context['message'] = _('Xiao Bin Cheng Store')
