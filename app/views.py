@@ -83,8 +83,9 @@ def about(request):
 
     context = prepare_general_cxt ()
     context['title'] = _('About')
-    context['message'] = _('Xiao Bin Cheng Store')
-    
+    context['about_message'] = _('Xiao Bin Cheng Store')
+    context['store_introduce'] = _('Specialty store of all kinds of Southeast Asian food, spices ,fresh and frozen ingredients')
+    context['store_address'] = _('No. 86, Gong guan St., Banqiao Dist., New Taipei City, Taiwan')
 
     return render(
         request,

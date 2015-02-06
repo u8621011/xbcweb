@@ -50,9 +50,25 @@
                     {% endcomment %}
                     <li><a href="{% url 'about' %}">{% trans "About" %}</a></li>
                 </ul>
-                 <form action="/i18n/setlang/" method="post">{% csrf_token %}
+                {% comment "new lang picker" %}
+                <div class="btn-group btn-group btn-group-sm" id="lang_picker">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        {{LANGUAGE_CODE}} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        {% for language in languages %}
+                            <li>{{language.name_local}} ({{language.code}})</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endcomment %}
+                {% comment "old lang picker" %}
+                <form action="/i18n/setlang/" method="post" class='nav navbar-nav navbar-right'>{% csrf_token %}
                     <input name="next" type="hidden" value="/" />
-                    <select name="language">
+                    <select name="language" class="form-control">
                         {% get_current_language as LANGUAGE_CODE %}
                         {% get_available_languages as LANGUAGES %}
                         {% get_language_info_list for LANGUAGES as languages %}
@@ -64,7 +80,8 @@
                     </select>
                     <input type="submit" value="Go" />
                 </form>
-                {% comment 'login ui' %}
+                {% endcomment %}
+                {% comment %}
                 {% include 'app/loginpartial.html' %}
                 {% endcomment %}
             </div>

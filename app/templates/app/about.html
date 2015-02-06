@@ -1,9 +1,10 @@
 ﻿{% extends "app/layout.html" %}
-{% load i18n %}
 {% block content %}
 
 <h2>{{ title }}.</h2>
-<h3>{{ message }}</h3>
+<h3>{{ about_message }}</h3>
+<p>{{store_introduce}}</p>
+<br/>
 <!--
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.7722912468766!2d121.4611604485794!3d25.015586424240933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x733b4f15fadd8bfb!2z5bCP5r-x5Z-O5ZWG6KGM!5e0!3m2!1szh-TW!2stw!4v1420460224205" width="600" height="450" frameborder="0" style="border:0"></iframe>
 -->
@@ -12,8 +13,8 @@
 <iframe src="https://www.google.com/maps/d/embed?mid=zZ3fE9YYxJ4Y.kwSz1GxLu-58" width="640" height="480"></iframe>
 -->
 <br/>
-<p>{% trans "專賣各類東南亞食品、生鮮冷凍食材及雜貨。" %}</p>
-<p>{% trans "No. 86, Gong guan St., Banqiao Dist., New Taipei City, Taiwan" %}</p>
+<br/>
+<p>Address: {{store_address}}</p>
 <p>Tel: 02-2966-5915</p>
 <p>Email:<a href="mailto:xbc.sales@gmail.com"> xbc.sales@gmail.com</a></p>
 <p>Facebook: <a href="https://www.facebook.com/banqiaoxbc" target="_blank">https://www.facebook.com/banqiaoxbc</a></p>

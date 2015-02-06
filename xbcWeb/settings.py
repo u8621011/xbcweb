@@ -46,7 +46,8 @@ TIME_ZONE = 'Asia/Taipei'
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 #LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'zh-tw'
+#LANGUAGE_CODE = 'zh-tw'
+LANGUAGE_CODE = 'id'
 
 # available languages of this site
 LANGUAGES = (
@@ -59,7 +60,6 @@ SITE_ID = 1
 
 import os
 LOCALE_PATHS = (os.path.join(os.path.dirname(__file__), '../locale/'),)
-print (LOCALE_PATHS)
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.

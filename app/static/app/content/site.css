@@ -62,3 +62,11 @@ input[type="checkbox"].input-validation-error {
         background: rgba(0, 0, 0, 0.7);
         /*padding: 10px;*/
     }
+
+#lang_form {
+    margin-bottom: 0;
+}
+
+#lang_picker {
+    margin: 0 auto;
+}
