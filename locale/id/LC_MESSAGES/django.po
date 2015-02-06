@@ -30,7 +30,7 @@ msgstr "Tentang Kita"
 
 #: app/templates/app/products.html:45 app/templates/app/products.html.py:47
 msgid "Search"
-msgstr ""
+msgstr "Pencarian"
 
 #: app/templates/app/products.html:104 app/templates/app/products.html:107
 msgid "Previous"

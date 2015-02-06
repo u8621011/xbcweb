@@ -30,7 +30,7 @@ msgstr "關於我們"
 
 #: app/templates/app/products.html:45 app/templates/app/products.html.py:47
 msgid "Search"
-msgstr ""
+msgstr "搜尋"
 
 #: app/templates/app/products.html:104 app/templates/app/products.html:107
 msgid "Previous"
