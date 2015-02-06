@@ -34,15 +34,15 @@ msgstr "搜尋"
 
 #: app/templates/app/products.html:86
 msgid "No"
-msgstr ""
+msgstr "編號"
 
 #: app/templates/app/products.html:87
 msgid "Spec"
-msgstr ""
+msgstr "規格"
 
 #: app/templates/app/products.html:88
 msgid "Unit"
-msgstr ""
+msgstr "單位"
 
 #: app/templates/app/products.html:104 app/templates/app/products.html:107
 msgid "Previous"

@@ -34,15 +34,15 @@ msgstr "Pencarian"
 
 #: app/templates/app/products.html:86
 msgid "No"
-msgstr ""
+msgstr "Ada"
 
 #: app/templates/app/products.html:87
 msgid "Spec"
-msgstr ""
+msgstr "Spec"
 
 #: app/templates/app/products.html:88
 msgid "Unit"
-msgstr ""
+msgstr "Satuan"
 
 #: app/templates/app/products.html:104 app/templates/app/products.html:107
 msgid "Previous"
