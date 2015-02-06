@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-06 11:25+0800\n"
+"POT-Creation-Date: 2015-02-06 12:23+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,13 +20,17 @@ msgstr ""
 msgid "Password"
 msgstr "Sandi"
 
-#: app/templates/app/layout.html:31
+#: app/templates/app/layout.html:31 app/templates/app/layout.html.py:36
 msgid "Products"
 msgstr "Produk"
 
 #: app/templates/app/layout.html:51 app/views.py:85
 msgid "About"
 msgstr "Tentang Kita"
+
+#: app/templates/app/products.html:115
+msgid "Page"
+msgstr ""
 
 #. Translators: The brand name of the site
 #: app/views.py:23 app/views.py:86
@@ -41,7 +45,9 @@ msgstr "Home"
 msgid ""
 "Specialty store of all kinds of Southeast Asian food, spices ,fresh and "
 "frozen ingredients"
-msgstr "Kami jual semua jenis makanan Asia Tenggara rempah-rempah, segar dan beku bahan"
+msgstr ""
+"Kami jual semua jenis makanan Asia Tenggara rempah-rempah, segar dan beku "
+"bahan"
 
 #: app/views.py:88
 msgid "No. 86, Gong guan St., Banqiao Dist., New Taipei City, Taiwan"
