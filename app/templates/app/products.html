@@ -98,10 +98,10 @@
             <ul class="pager">
                 {% if p|add:"-1" %}
                     <!-- not first page -->
-                    <li class="previous col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'-1'}}&s={{s}}"><span aria-hidden="true">&larr;</span> {% trans "Previous" }</a></li>
+                    <li class="previous col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'-1'}}&s={{s}}"><span aria-hidden="true">&larr;</span> {% trans "Previous" %}</a></li>
                 {% else %}
                     <!-- first page -->
-                    <li class="previous disabled col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'-1'}}&s={{s}}"><span aria-hidden="true">&larr;</span> {% trans "Previous" }</a></li>
+                    <li class="previous disabled col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'-1'}}&s={{s}}"><span aria-hidden="true">&larr;</span> {% trans "Previous" %}</a></li>
                 {% endif %}
 
                 {% comment %}
@@ -111,9 +111,9 @@
                 <li class="col-xs-2">{% trans "Page" %} {{p}}/{{pt}}</li>
 
                 {% if p == pt %}
-                    <li class="next disabled col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'1'}}&s={{s}}">{% trans "Next" } <span aria-hidden="true">&rarr;</span></a></li>
+                    <li class="next disabled col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'1'}}&s={{s}}">{% trans "Next" %} <span aria-hidden="true">&rarr;</span></a></li>
                 {% else %}
-                    <li class="next col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'1'}}&s={{s}}">{% trans "Next" } <span aria-hidden="true">&rarr;</span></a></li>
+                    <li class="next col-xs-5"><a href="products?c={{c}}&ipp={{ipp}}&t={{t}}&pt={{pt}}&p={{p|add:'1'}}&s={{s}}">{% trans "Next" %} <span aria-hidden="true">&rarr;</span></a></li>
                 {% endif %}
             </ul>
         </div>
