@@ -80,9 +80,9 @@
                     -->
                     <p style='height: 2em'>{{ product.name_indo }}</p>
                     <p>
-                        編號: {{product.code}}<br/>
-                        規格: {{product.spec}}<br/>
-                        單位: {{product.uom.name}}
+                        {% trans "No" %}: {{product.code}}<br/>
+                        {% trans "Spec" %}: {{product.spec}}<br/>
+                        {% trans "Unit" %}: {{product.uom.name}}
                     </p>
                 </div>
             {% endfor %}
