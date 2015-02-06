@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-06 12:23+0800\n"
+"POT-Creation-Date: 2015-02-06 13:13+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,8 +28,16 @@ msgstr "產品"
 msgid "About"
 msgstr "關於我們"
 
+#: app/templates/app/products.html:104 app/templates/app/products.html:107
+msgid "Previous"
+msgstr ""
+
 #: app/templates/app/products.html:115
 msgid "Page"
+msgstr ""
+
+#: app/templates/app/products.html:118 app/templates/app/products.html:120
+msgid "Next"
 msgstr ""
 
 #. Translators: The brand name of the site
