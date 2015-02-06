@@ -40,9 +40,9 @@
                     <div id="search_icon" class="input-group-addon glyphicon glyphicon-search" onclick='on_product_search_click ({{c}});'></div>
                 {% endif %}
                 {% if s %}
-                    <input type="text" placeholder={% trans "Search"} class="form-control" id="product_search_box" onkeypress="on_product_search_pressed (event, {{c}});" value={{s}}>
+                    <input type="text" placeholder={% trans "Search" %} class="form-control" id="product_search_box" onkeypress="on_product_search_pressed (event, {{c}});" value={{s}}>
                 {% else %}
-                    <input type="text" placeholder={% trans "Search"} class="form-control" id="product_search_box" onkeypress="on_product_search_pressed (event, {{c}});">
+                    <input type="text" placeholder={% trans "Search" %} class="form-control" id="product_search_box" onkeypress="on_product_search_pressed (event, {{c}});">
                 {% endif %}
             </div>
         </div>

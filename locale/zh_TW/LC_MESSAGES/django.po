@@ -30,15 +30,15 @@ msgstr "關於我們"
 
 #: app/templates/app/products.html:104 app/templates/app/products.html:107
 msgid "Previous"
-msgstr ""
+msgstr "上一頁"
 
 #: app/templates/app/products.html:115
 msgid "Page"
-msgstr ""
+msgstr "頁面"
 
 #: app/templates/app/products.html:118 app/templates/app/products.html:120
 msgid "Next"
-msgstr ""
+msgstr "下一頁"
 
 #. Translators: The brand name of the site
 #: app/views.py:23 app/views.py:86

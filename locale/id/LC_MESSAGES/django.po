@@ -11,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_TW\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,15 +30,15 @@ msgstr "Tentang Kita"
 
 #: app/templates/app/products.html:104 app/templates/app/products.html:107
 msgid "Previous"
-msgstr ""
+msgstr "Sebelumnya"
 
 #: app/templates/app/products.html:115
 msgid "Page"
-msgstr ""
+msgstr "Halaman"
 
 #: app/templates/app/products.html:118 app/templates/app/products.html:120
 msgid "Next"
-msgstr ""
+msgstr "Berikutnya"
 
 #. Translators: The brand name of the site
 #: app/views.py:23 app/views.py:86
