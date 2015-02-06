@@ -18,20 +18,20 @@ msgstr ""
 
 #: app/forms.py:16
 msgid "Password"
-msgstr "密碼"
+msgstr "Sandi"
 
 #: app/templates/app/layout.html:31
 msgid "Products"
-msgstr "產品"
+msgstr "Produk"
 
 #: app/templates/app/layout.html:51 app/views.py:85
 msgid "About"
-msgstr "關於我們"
+msgstr "Tentang Kita"
 
 #. Translators: The brand name of the site
 #: app/views.py:23 app/views.py:86
 msgid "Xiao Bin Cheng Store"
-msgstr "小濱城"
+msgstr "Toko Indo Xiao Bin Cheng"
 
 #: app/views.py:35
 msgid "Home"
@@ -41,24 +41,24 @@ msgstr "Home"
 msgid ""
 "Specialty store of all kinds of Southeast Asian food, spices ,fresh and "
 "frozen ingredients"
-msgstr ""
+msgstr "Kami jual semua jenis makanan Asia Tenggara rempah-rempah, segar dan beku bahan"
 
 #: app/views.py:88
 msgid "No. 86, Gong guan St., Banqiao Dist., New Taipei City, Taiwan"
-msgstr ""
+msgstr "No. 86, Gong guan St., Banqiao Dist., New Taipei City, Taiwan"
 
 #: app/views.py:106
 msgid "Product"
-msgstr "產品"
+msgstr "Produk"
 
 #: xbcWeb/settings.py:54
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: xbcWeb/settings.py:55
 msgid "繁體中文"
-msgstr ""
+msgstr "繁體中文"
 
 #: xbcWeb/settings.py:56
 msgid "Bahasa Indonesia"
-msgstr ""
+msgstr "Bahasa Indonesia"

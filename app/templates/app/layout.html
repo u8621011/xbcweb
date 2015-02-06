@@ -33,13 +33,13 @@
                     {% if product_categories %}
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Products
+                                {% trans "Products" %}
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
                                 {% for category in product_categories %}
                                     {% if category.show_it %}
-                                        <li><a href="{% url 'products' %}?c={{category.code}}">{{category.name}}</a></li>
+                                        <li><a href="{% url 'products' %}?c={{category.code}}">{{category.name_indo}}</a></li>
                                     {% endif %}
                                 {% endfor %}
                             </ul>
@@ -80,7 +80,7 @@
                     </select>
                     <input type="submit" value="Go" />
                 </form>
-                {% endcomment %}
+                <% endcomment %}
                 {% comment %}
                 {% include 'app/loginpartial.html' %}
                 {% endcomment %}

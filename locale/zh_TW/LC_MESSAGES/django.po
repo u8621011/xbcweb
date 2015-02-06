@@ -31,7 +31,7 @@ msgstr "關於我們"
 #. Translators: The brand name of the site
 #: app/views.py:23 app/views.py:86
 msgid "Xiao Bin Cheng Store"
-msgstr "小濱城"
+msgstr "小濱城東南亞食品"
 
 #: app/views.py:35
 msgid "Home"
@@ -41,11 +41,11 @@ msgstr "Home"
 msgid ""
 "Specialty store of all kinds of Southeast Asian food, spices ,fresh and "
 "frozen ingredients"
-msgstr ""
+msgstr "專賣各類東南亞食口、香料及生鮮冷凍食材。"
 
 #: app/views.py:88
 msgid "No. 86, Gong guan St., Banqiao Dist., New Taipei City, Taiwan"
-msgstr ""
+msgstr "新北市板橋區公館街86號"
 
 #: app/views.py:106
 msgid "Product"
@@ -53,12 +53,12 @@ msgstr "產品"
 
 #: xbcWeb/settings.py:54
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: xbcWeb/settings.py:55
 msgid "繁體中文"
-msgstr ""
+msgstr "繁體中文"
 
 #: xbcWeb/settings.py:56
 msgid "Bahasa Indonesia"
-msgstr ""
+msgstr "Bahasa Indonesia"
