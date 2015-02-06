@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-03 13:56+0800\n"
+"POT-Creation-Date: 2015-02-06 11:25+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,12 +24,12 @@ msgstr ""
 msgid "Products"
 msgstr ""
 
-#: app/templates/app/layout.html:51 app/views.py:79
+#: app/templates/app/layout.html:51 app/views.py:85
 msgid "About"
 msgstr ""
 
 #. Translators: The brand name of the site
-#: app/views.py:23 app/views.py:80
+#: app/views.py:23 app/views.py:86
 msgid "Xiao Bin Cheng Store"
 msgstr ""
 
@@ -37,6 +37,28 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: app/views.py:99
+#: app/views.py:87
+msgid ""
+"Specialty store of all kinds of Southeast Asian food, spices ,fresh and "
+"frozen ingredients"
+msgstr ""
+
+#: app/views.py:88
+msgid "No. 86, Gong guan St., Banqiao Dist., New Taipei City, Taiwan"
+msgstr ""
+
+#: app/views.py:106
 msgid "Product"
+msgstr ""
+
+#: xbcWeb/settings.py:54
+msgid "English"
+msgstr ""
+
+#: xbcWeb/settings.py:55
+msgid "繁體中文"
+msgstr ""
+
+#: xbcWeb/settings.py:56
+msgid "Bahasa Indonesia"
 msgstr ""
