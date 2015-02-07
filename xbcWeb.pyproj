@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".env" />
+    <Content Include=".gitignore" />
     <Content Include="app\static\app\content\3-col-portfolio.css" />
     <Content Include="app\static\app\scripts\xbc.js" />
     <Content Include="app\templates\app\delivery_intro.html" />
